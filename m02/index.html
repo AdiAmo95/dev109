@@ -1,1 +1,85 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>HTML Table Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .merge {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="3" class="merge">
+                <h1>HTML Table Example</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>Meal Planner</h2>
+            </td>
+            <td>
+                <h2>Recipe Index #:</h2>
+            </td>
+            <td>
+                <h2>Week starting</h2>
+            </td>
+        </tr>
+        <tr>
+            <th>Day of the Week</th>
+            <th>Recipe Name</th>
+            <th>Instructions</th>
+        </tr>
+        <tr>
+            <td><b>Monday</b></td>
+            <td>Spinach Feta</td>
+            <td rowspan="7">
+                Spinach Feta
+            </td>
+        </tr>
+        <tr>
+            <td><b>Tuesday</b></td>
+            <td>Pizza</td>
+        </tr>
+        <tr>
+            <td><b>Wednesday</b></td>
+            <td>Tomato soup</td>
+        </tr>
+        <tr>
+            <td><b>Thursday</b></td>
+            <td>Greek salad</td>
+        </tr>
+        <tr>
+            <td><b>Friday</b></td>
+            <td>Mac and Cheese</td>
+        </tr>
+        <tr>
+            <td><b>Saturday</b></td>
+            <td>Pink souce pasta</td>
+        </tr>
+        <tr>
+            <td><b>Sunday</b></td>
+            <td>French fries</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="merge">
+                <img src="image.png" alt="Pizza" style="width: 300px; height: auto;">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
